@@ -8,10 +8,11 @@ process.env.NODE_EV = process.env.NODE_EV || 'dev';
 // Conexion a la base de datos
 let urlDB;
 
-if (process.env.NODE_EV === 'dev') {
+if (urlDB === 'dev') {
     urlDB = "mongodb://localhost:27017/cafe";
 } else {
-    urlDB = `mongodb+srv://strider:dh55pj@cluster0.ojupz.mongodb.net/cafe`;
+    urlDB = `mongodb+srv://geralt:impro123@cluster0.22tg2.mongodb.net/cafe`;
 }
+
 
 process.env.URLDB = urlDB;

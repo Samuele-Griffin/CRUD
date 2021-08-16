@@ -35,7 +35,7 @@ app.use(require('./routes/categorias'), (req, res) => {
 
 
 // Establecer conexion con la base de datos de MongoDB
-mongoose.connect(process.env.URLDB, { useNewUrlParser: true, useUnifiedTopology: true }, (err, resp) => {
+mongoose.connect(process.env.URLDB, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }, (err, resp) => {
     if (err) {
         throw new Error('Ha ocurrido un error' + err);
     }
